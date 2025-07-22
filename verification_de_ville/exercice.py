@@ -9,19 +9,29 @@ Les régions et leurs villes sont les suivantes :
 Le programme doit demander à l'utilisateur le nom d'une ville, indiquer sa région ou préciser si la ville n'est pas reconnue, puis proposer de vérifier une autre ville.
 """
 
-# Methode 1
-
 DICTIONNAIRE_DES_REGIONS = {
     "Nord": ["Tunis", "Bizerte", "Ariana"],
     "Centre": ["Sfax", "Kairouan", "Sousse"],
     "Sud": ["Gabès", "Medenine", "Tataouine"]
 }
 
+# Methode 1
 def verifier_region_ville(ville):
     for region, villes in DICTIONNAIRE_DES_REGIONS.items():
         if ville in villes:
             return region
     return "Inconnue"
+
+# Methode 2
+def verifier_region_ville_methode2(ville):
+    if ville in DICTIONNAIRE_DES_REGIONS["Nord"]:
+        return "Nord"
+    elif ville in DICTIONNAIRE_DES_REGIONS["Centre"]:
+        return "Centre"
+    elif ville in DICTIONNAIRE_DES_REGIONS["Sud"]:
+        return "Sud"
+    return "Inconnue"
+
 
 while True:
     ville = input("Entrez le nom de la ville à vérifier: ").strip()
@@ -37,13 +47,3 @@ while True:
     if continuer != 'oui':
         break
     
-# Methode 2
-def verifier_region_ville_methode2(ville):
-    if ville in DICTIONNAIRE_DES_REGIONS["Nord"]:
-        return "Nord"
-    elif ville in DICTIONNAIRE_DES_REGIONS["Centre"]:
-        return "Centre"
-    elif ville in DICTIONNAIRE_DES_REGIONS["Sud"]:
-        return "Sud"
-    return "Inconnue"
-

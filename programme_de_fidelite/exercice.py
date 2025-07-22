@@ -1,30 +1,28 @@
 """
 Programme de fidélité - Exercice
 
-Règle : Pour chaque tranche de 10 cafés achetés, 1 café est offert.
-Exemple : Si un client achète 25 cafés, il reçoit 2 cafés offerts.
-
-Écrivez un programme qui demande à l'utilisateur combien de cafés il a achetés et affiche le nombre de cafés offerts selon la règle ci-dessus.
+Pour chaque multiplicité de 10 cafés achetés, le client reçoit un café offert.
 """
 
-def calculer_cafes_offerts(cafes_achetes):
-    return cafes_achetes % 10
+def is_multiplicite_de_dix(cafes_achetes):
+    return cafes_achetes % 10 == 0
 
-def check_user_input():
+
+while True:
     try:
         cafes_achetes = int(input("Entrez le nombre de cafés achetés: "))
         if cafes_achetes < 0:
-            print("Le nombre de cafés achetés ne peut pas être négatif.")
-            return
+            print("Veuillez entrer un nombre positif.")
+            continue
         
-        cafes_offerts = calculer_cafes_offerts(cafes_achetes)
-        if cafes_offers == 0:
-            print(f"Vous avez droit à {cafes_offerts} café(s) offert(s).")
+        if is_multiplicite_de_dix(cafes_achetes):
+            print(f"Félicitations! Vous avez droit à un café offert pour vos {cafes_achetes} cafés achetés.")
+        else:
+            print(f"Vous avez acheté {cafes_achetes} cafés, mais vous n'avez pas droit à de café offert.")
+        
     except ValueError:
         print("Entrée invalide. Veuillez entrer un nombre entier.")
-        
-while True:
-    check_user_input()
-    continuer = input("Voulez-vous vérifier un autre nombre de cafés achetés ? (oui/non): ").strip().lower()
-    if continuer != 'oui':
+    
+    continuer = input("Voulez-vous vérifier un autre nombre de cafés? (oui/non): ")
+    if continuer.lower() != "oui":
         break
