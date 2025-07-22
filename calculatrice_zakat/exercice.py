@@ -6,19 +6,26 @@ Calculatrice de Zakat - Exercice
 - Si le montant est supérieur ou égal au Nissab, la Zakat à payer est égale à 2,5% du montant.
 Le programme doit permettre à l'utilisateur de faire plusieurs calculs successifs.
 """
+NISSAB = 8400 
 
-def calculer_zakat(montant):
-    NISSAB = 8400  # Nissab en TND
+def calculer_zakat_method1(montant):
     if montant < NISSAB:
         return 0.0
     else:
         return montant * 0.025  # 2.5%
-    
+
+def calculer_zakat_method2(montant):
+    if montant < NISSAB:
+        return 0.0
+    return montant * 0.025  # 2.5%
+
+def calculer_zakat_methode3(montant):
+    return 0.0 if montant < NISSAB else montant * 0.025 
     
 while True:
     try:
         montant = float(input("Entrez le montant pour calculer la Zakat: "))
-        zakat = calculer_zakat(montant)
+        zakat = calculer_zakat_method1(montant)
         if zakat > 0:
             print(f"La Zakat à payer sur {montant:.2f} TND est de {zakat:.2f} TND.")
         else:
