@@ -1,7 +1,10 @@
 """
-Deviner un plat tunisien
+Jeu : Devinez le plat tunisien
 
-L'ordinateur choisit un plat tunisien, et l'utilisateur doit deviner le nom du plat.
+L'ordinateur sélectionne aléatoirement un plat typique tunisien parmi une liste.
+Votre objectif est de deviner le nom du plat choisi.
+À chaque tentative, le programme vous indique si votre réponse est correcte ou non, jusqu'à ce que vous trouviez la bonne réponse.
+Bonne chance !
 """
 import random
 

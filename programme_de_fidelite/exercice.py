@@ -1,8 +1,10 @@
 """
-
 Programme de fidélité - Exercice
 
-Un café est offert pour chaque 10 cafés achetés.
+Règle : Pour chaque tranche de 10 cafés achetés, 1 café est offert.
+Exemple : Si un client achète 25 cafés, il reçoit 2 cafés offerts.
+
+Écrivez un programme qui demande à l'utilisateur combien de cafés il a achetés et affiche le nombre de cafés offerts selon la règle ci-dessus.
 """
 
 def calculer_cafes_offerts(cafes_achetes):

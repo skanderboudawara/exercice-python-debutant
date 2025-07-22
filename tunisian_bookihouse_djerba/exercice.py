@@ -1,12 +1,14 @@
 """
-Create a Tunisian booking house system for Djerba
+Créez un système de réservation de maisons tunisiennes à Djerba.
 
-This exercice must contains classes for houses
-Classes for people
+Exigences :
+- Implémentez des classes pour représenter les maisons et les personnes.
+- Permettez à un utilisateur de vérifier la disponibilité d'une maison à une date donnée.
+- Permettez la réservation d'une maison pour une date spécifique.
+- Permettez l'annulation d'une réservation.
+- Affichez les réservations effectuées par une personne.
 
-The user should then be able to see if a house is available or not
-Booking a house should be possible
-Cancelling a booking should be possible
+Le système doit être simple à utiliser et illustrer les principales fonctionnalités de réservation.
 """
 
 class House:

@@ -1,5 +1,6 @@
 """
-Calcul du temps avant le Nouvel An
+Ce programme calcule et affiche le temps restant avant le Nouvel An
+en jours, heures, minutes et secondes à partir de la date et l'heure actuelles.
 """
 import datetime
 

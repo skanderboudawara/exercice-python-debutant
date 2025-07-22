@@ -1,9 +1,12 @@
 """
-Calcul de facture de STEG
+Énoncé : Calcul de la facture d'électricité STEG
 
-< 100 KWh: 0.18 TND par KWh
-100-200 KWh: 0.23 TND par KWh
-> 200 KWh: 0.28 TND par KWh
+Règles de tarification :
+- Pour une consommation inférieure à 100 KWh : 0.18 TND par KWh
+- Pour une consommation comprise entre 100 et 200 KWh : 0.23 TND par KWh pour la tranche supplémentaire
+- Pour une consommation supérieure à 200 KWh : 0.28 TND par KWh pour la tranche supplémentaire
+
+Écrire un programme qui demande à l'utilisateur sa consommation en KWh et affiche le montant total de la facture selon ces règles.
 """
 
 def calculer_facture_steg(kwh):

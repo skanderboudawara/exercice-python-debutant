@@ -1,9 +1,10 @@
 """
 Calculatrice de Zakat - Exercice
 
-Ecrire un programme qui calcule la Zakat à partir d'un montant donné.
-La zakat est calculée comme suit:
-- Si le montant depasse le Nissab (8400 TND), la Zakat est de 2.5% du montant.
+Écrivez un programme qui demande à l'utilisateur un montant en dinars tunisiens (TND) et calcule la Zakat à payer selon les règles suivantes :
+- Si le montant est inférieur au Nissab (8400 TND), aucune Zakat n'est due.
+- Si le montant est supérieur ou égal au Nissab, la Zakat à payer est égale à 2,5% du montant.
+Le programme doit permettre à l'utilisateur de faire plusieurs calculs successifs.
 """
 
 def calculer_zakat(montant):

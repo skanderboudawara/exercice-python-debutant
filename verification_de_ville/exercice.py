@@ -1,10 +1,12 @@
 """
-Verifier si une ville est au nord, au centre ou au sud de la Tunisie
+Écrire un programme qui permet à l'utilisateur de vérifier dans quelle région de la Tunisie se trouve une ville donnée.
 
-Exemple de villes:
-Tunis, Bizerte, Ariana (Nord)
-Sfax, Kairouan, Sousse (Centre)
-Gabès, Medenine, Tataouine (Sud)
+Les régions et leurs villes sont les suivantes :
+- Nord : Tunis, Bizerte, Ariana
+- Centre : Sfax, Kairouan, Sousse
+- Sud : Gabès, Medenine, Tataouine
+
+Le programme doit demander à l'utilisateur le nom d'une ville, indiquer sa région ou préciser si la ville n'est pas reconnue, puis proposer de vérifier une autre ville.
 """
 
 # Methode 1

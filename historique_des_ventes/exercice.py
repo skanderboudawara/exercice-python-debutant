@@ -1,10 +1,10 @@
 """
-Faire un programme qui 
+Écrire un programme qui :
 
-demander un nom d'article
-Enregistrer chaque article dans un fichier texte ventes.txt et le pix affiché devant
-Afficher le total à la fin
-
+1. Demande à l'utilisateur de saisir le nom d'un article parmi une liste proposée.
+2. Enregistre chaque article sélectionné, ainsi que son prix, dans un fichier texte nommé ventes.txt.
+3. Affiche le total des ventes à la fin de la saisie.
+4. Permet à l'utilisateur de terminer la saisie en entrant 'stop'.
 """
 
 ARTICLE_PRIX = {

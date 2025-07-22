@@ -1,10 +1,10 @@
 """
-Verifier si un numero CIN Tunisien est valide
+Vérification de la validité d'un numéro de CIN tunisien.
 
-CIN Validation:
-- Composé de 8 chiffres.
-- Le premier chiffre doit être compris entre 0 et 1
-- Le CIN doit être que des chiffres
+Règles de validation :
+- Le numéro de CIN doit comporter exactement 8 chiffres.
+- Le premier chiffre doit être 0 ou 1.
+- Tous les caractères doivent être des chiffres (0-9).
 """
 
 def is_cin_valid(cin):

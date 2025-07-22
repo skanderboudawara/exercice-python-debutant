@@ -1,8 +1,17 @@
 """
-Exercice: Conversion du dinar Tunisien (TND) en euro (EUR) et vice versa
+Exercice : Conversion entre dinar tunisien (TND) et euro (EUR)
 
-Objet: écrire un programme qui convertit une somme en dinars tunisiens (TND) en euros (EUR).
-Taux de conversion: 1 EUR = 3.41 TND.
+Énoncé :
+Écrivez un programme qui permet à l'utilisateur de convertir un montant entre dinars tunisiens (TND) et euros (EUR) dans les deux sens.
+Le taux de conversion utilisé est : 1 EUR = 3.41 TND.
+
+Le programme doit :
+- Demander à l'utilisateur le montant à convertir.
+- Demander dans quelle devise convertir (TND vers EUR ou EUR vers TND).
+- Afficher le résultat de la conversion avec deux décimales.
+- Permettre à l'utilisateur d'effectuer plusieurs conversions jusqu'à ce qu'il décide d'arrêter.
+
+Bonus : Gérez les entrées invalides de l'utilisateur (montant non numérique ou choix incorrect).
 """
 
 def convertir_tnd_en_eur(montant_tnd):
