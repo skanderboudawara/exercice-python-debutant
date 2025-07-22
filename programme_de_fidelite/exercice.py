@@ -8,7 +8,7 @@ Exemple : Si un client achète 25 cafés, il reçoit 2 cafés offerts.
 """
 
 def calculer_cafes_offerts(cafes_achetes):
-    return cafes_achetes // 10
+    return cafes_achetes % 10
 
 def check_user_input():
     try:
@@ -18,7 +18,8 @@ def check_user_input():
             return
         
         cafes_offerts = calculer_cafes_offerts(cafes_achetes)
-        print(f"Vous avez droit à {cafes_offerts} café(s) offert(s).")
+        if cafes_offers == 0:
+            print(f"Vous avez droit à {cafes_offerts} café(s) offert(s).")
     except ValueError:
         print("Entrée invalide. Veuillez entrer un nombre entier.")
         
