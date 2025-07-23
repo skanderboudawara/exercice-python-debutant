@@ -57,7 +57,6 @@ person_1 = Person("Ahmed", "ahmed@example.com")
 
 if __name__ == "__main__":
     person_1.book_house(house_1, "2023-07-01")
-    person_1.book_house(house_2, "2023-07-02")
     print(f"House {house_1.name} booked on 2023-07-01: {house_1.is_available('2023-07-01')}")
     print(f"House {house_2.name} booked on 2023-07-02: {house_2.is_available('2023-07-02')}")
     person_1.cancel_booking(house_1, "2023-07-01")
