@@ -48,5 +48,7 @@ def choix_article():
     write_to_file("Total", somme_totale)
     
 if __name__ == "__main__":
+    with open("ticket.txt", "w") as f:
+        f.truncate(0)
     choix_article()
     print("Les ventes ont été enregistrées dans le fichier ventes.txt.")
